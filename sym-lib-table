@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name 381camcon)(type Legacy)(uri ${KIPRJMOD}/381camcon.lib)(options "")(descr ""))
+  (lib (name APHBM2012)(type Legacy)(uri ${KIPRJMOD}/APHBM2012.lib)(options "")(descr ""))
+  (lib (name dmmt5401)(type Legacy)(uri ${KIPRJMOD}/dmmt5401.lib)(options "")(descr ""))
+  (lib (name lm74610)(type Legacy)(uri ${KIPRJMOD}/lm74610.lib)(options "")(descr ""))
+  (lib (name tps2400)(type Legacy)(uri ${KIPRJMOD}/tps2400.lib)(options "")(descr ""))
+)
