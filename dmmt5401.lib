@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# DMMT5401
+#
+DEF DMMT5401 U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "DMMT5401" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -700 300 650 -250 0 1 0 N
+X Collector1 1 -800 150 100 R 50 50 1 1 I
+X Base_1 2 -800 0 100 R 50 50 1 1 I
+X Base_2 3 -800 -150 100 R 50 50 1 1 I
+X Collector_2 4 750 -150 100 L 50 50 1 1 I
+X Emmiter_2 5 750 0 100 L 50 50 1 1 I
+X Emmitter_1 6 750 150 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
