@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pi_power_board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -78,6 +79,8 @@ F 3 "" H 11100 2450 50  0001 C CNN
 	1    11100 2450
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	10700 2450 10900 2450
 $Comp
 L power:GND #PWR0111
 U 1 1 5CEC4777
@@ -294,12 +297,12 @@ $EndComp
 $Comp
 L Device:D_TVS D1
 U 1 1 5CF8EC23
-P 1900 2600
-F 0 "D1" V 1854 2679 50  0000 L CNN
-F 1 "D5V0L1B2T-7" V 1945 2679 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-523" H 1900 2600 50  0001 C CNN
-F 3 "~" H 1900 2600 50  0001 C CNN
-	1    1900 2600
+P 1400 2600
+F 0 "D1" V 1354 2679 50  0000 L CNN
+F 1 "D5V0L1B2T-7" V 1445 2679 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 1400 2600 50  0001 C CNN
+F 3 "~" H 1400 2600 50  0001 C CNN
+	1    1400 2600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -314,7 +317,14 @@ F 3 "~" H 6400 2550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1800 2450 1900 2450
+	1150 2450 1400 2450
+Connection ~ 1400 2450
+Wire Wire Line
+	1400 2450 1500 2450
+Wire Wire Line
+	1800 2450 2100 2450
+Wire Wire Line
+	1150 2750 1400 2750
 $Comp
 L Device:C C2
 U 1 1 5CEBD228
@@ -326,6 +336,7 @@ F 3 "~" H 10900 2600 50  0001 C CNN
 	1    10900 2600
 	-1   0    0    1   
 $EndComp
+Connection ~ 10900 2450
 Wire Wire Line
 	10900 2450 11100 2450
 $Comp
@@ -386,7 +397,7 @@ F 3 "~" H 7300 5450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_PMOS_GSD Q3
+L Device:Q_PMOS_GDS Q3
 U 1 1 5D002BFF
 P 10500 2550
 F 0 "Q3" V 10843 2550 50  0000 C CNN
@@ -394,7 +405,7 @@ F 1 "DMG2305UX-7" V 10752 2550 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10700 2650 50  0001 C CNN
 F 3 "~" H 10500 2550 50  0001 C CNN
 	1    10500 2550
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L tps2400:TPS2400 U2
@@ -442,7 +453,10 @@ Wire Wire Line
 	2850 3500 3550 3500
 Connection ~ 11100 2450
 Wire Wire Line
+	10300 2450 10100 2450
+Wire Wire Line
 	6600 2450 10100 2450
+Connection ~ 10100 2450
 $Comp
 L dmmt5401:DMMT5401 U3
 U 1 1 5CFC7718
@@ -600,17 +614,4 @@ Wire Wire Line
 Connection ~ 7950 3400
 Wire Wire Line
 	7950 3400 7950 3900
-Connection ~ 1900 2450
-Wire Wire Line
-	1900 2450 2100 2450
-Wire Wire Line
-	1150 2450 1500 2450
-Wire Wire Line
-	1150 2750 1900 2750
-Wire Wire Line
-	10300 2450 10100 2450
-Connection ~ 10100 2450
-Wire Wire Line
-	10700 2450 10900 2450
-Connection ~ 10900 2450
 $EndSCHEMATC
