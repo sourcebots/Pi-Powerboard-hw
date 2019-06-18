@@ -293,17 +293,6 @@ F 3 "~" H 4950 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_TVS D1
-U 1 1 5CF8EC23
-P 1900 2600
-F 0 "D1" V 1854 2679 50  0000 L CNN
-F 1 "D5V0L1B2T-7" V 1945 2679 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-523" H 1900 2600 50  0001 C CNN
-F 3 "~" H 1900 2600 50  0001 C CNN
-	1    1900 2600
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:Q_NMOS_GSD Q2
 U 1 1 5CFB0A70
 P 6400 2550
@@ -314,8 +303,6 @@ F 3 "~" H 6400 2550 50  0001 C CNN
 	1    6400 2550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1800 2450 1900 2450
 $Comp
 L Device:C C2
 U 1 1 5CEBD228
@@ -590,19 +577,12 @@ Wire Wire Line
 Connection ~ 7950 3400
 Wire Wire Line
 	7950 3400 7950 3900
-Connection ~ 1900 2450
-Wire Wire Line
-	1900 2450 2100 2450
-Wire Wire Line
-	1150 2750 1900 2750
 Wire Wire Line
 	10300 2450 10100 2450
 Connection ~ 10100 2450
 Wire Wire Line
 	10700 2450 10900 2450
 Connection ~ 10900 2450
-Wire Wire Line
-	1050 2450 1500 2450
 Wire Wire Line
 	1150 2600 1050 2600
 $Comp
@@ -614,6 +594,26 @@ F 1 "MF-MSMF200-2" V 1516 2450 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 1700 2250 50  0001 L CNN
 F 3 "~" H 1650 2450 50  0001 C CNN
 	1    1650 2450
+	0    1    1    0   
+$EndComp
+Connection ~ 1900 2450
+Wire Wire Line
+	1900 2450 2100 2450
+Wire Wire Line
+	1800 2450 1900 2450
+Wire Wire Line
+	1150 2750 1900 2750
+Wire Wire Line
+	1050 2450 1500 2450
+$Comp
+L Device:D_TVS D1
+U 1 1 5CF8EC23
+P 1900 2600
+F 0 "D1" V 1854 2679 50  0000 L CNN
+F 1 "D5V0L1B2T-7" V 1945 2679 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-523" H 1900 2600 50  0001 C CNN
+F 3 "~" H 1900 2600 50  0001 C CNN
+	1    1900 2600
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC

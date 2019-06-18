@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.889)
+    (last_trace_width 0.254)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
     (user_trace_width 0.889)
@@ -1035,7 +1035,7 @@
     (fp_text reference D1 (at 0.95 1.95 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value D5V0L1B2T-7 (at 0 1.4 90) (layer F.Fab)
+    (fp_text value ESDA18-1K (at 0 1.4 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.7 0.6) (end -1.15 0.6) (layer F.SilkS) (width 0.12))
