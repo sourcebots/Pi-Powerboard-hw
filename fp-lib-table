@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name lm74610)(type KiCad)(uri ${KIPRJMOD}/lm74610.pretty)(options "")(descr ""))
+  (lib (name DMMT5401)(type KiCad)(uri ${KIPRJMOD}/DMMT5401.pretty)(options "")(descr ""))
+  (lib (name APHBM2012)(type KiCad)(uri ${KIPRJMOD}/APHBM2012.pretty)(options "")(descr ""))
+  (lib (name 381camcon)(type KiCad)(uri ${KIPRJMOD}/381camcon.pretty)(options "")(descr ""))
+)
